@@ -224,7 +224,7 @@
   .parent-card.bride-top .pc-label{color:var(--blush);}
   .parent-card .pc-name{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.2vw,19px);color:var(--text-dark);font-weight:600;line-height:1.4;}
   .deceased-line{font-family:'Cormorant Garamond',serif;font-size:clamp(13px,1.8vw,15px);color:var(--text-mid);font-style:italic;opacity:0.8;display:flex;align-items:center;gap:6px;margin-top:3px;}
-  .deceased-line::before{content:'✝';font-size:12px;color:var(--dark-tan);}
+  .deceased-line::after{content:'✝';font-size:12px;color:var(--dark-tan);}
 
   /* DRESS CODE */
   .dress-box{background:white;border-radius:10px;padding:30px 34px;box-shadow:0 4px 20px rgba(139,110,82,0.1);margin-bottom:24px;}
@@ -1158,38 +1158,6 @@
   </div>
 </section>
 
-<!-- ══════ VENUE ══════ -->
-<section id="venue" style="max-width:900px;">
-  <div class="section-label">Destination</div>
-  <div class="section-title">Our Lady's Garden</div>
-  <div class="venue-card reveal">
-    <div class="venue-map-area">
-      <p style="font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-mid);margin-bottom:6px;">Scan to get directions</p>
-      <div class="qr-container">
-        <canvas id="qr-code" width="150" height="150" style="image-rendering:pixelated;border-radius:4px;"></canvas>
-        <div class="qr-label" style="text-align:center;">📍 Our Lady's Garden · Bacolod City</div>
-        <div class="qr-sub">Tap or scan for Google Maps</div>
-      </div>
-      <a href="https://maps.app.goo.gl/aA7j1JyWDCHT8mDu8" target="_blank"
-         style="font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;color:var(--sage);text-decoration:none;border-bottom:1px solid var(--sage);padding-bottom:2px;">
-         Open in Google Maps ↗
-      </a>
-    </div>
-    <div class="venue-info-area">
-      <div class="venue-name-block">
-        <div class="venue-label">Ceremony & Reception</div>
-        <div class="venue-name">Our Lady's Garden</div>
-        <div class="venue-address">Lacson-Mandalagan Ext.<br>Bacolod City, Philippines</div>
-      </div>
-      <div style="text-align:left;">
-        <div style="font-family:'Special Elite',cursive;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--tan);margin-bottom:5px;">Ceremony Starts</div>
-        <div style="font-family:'Playfair Display',serif;font-size:28px;color:var(--text-dark);">4:00 PM</div>
-        <div style="font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-mid);margin-top:4px;">Please arrive by 3:30 PM</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ══════ DRESS CODE ══════ -->
 <section id="dresscode" style="max-width:900px;padding-left:0;padding-right:0;">
   <div style="padding:0 clamp(20px,5vw,60px) 0;">
@@ -1267,6 +1235,40 @@
     <div class="dc-roses dc-roses-right"></div>
   </div>
 </section>
+
+<!-- ══════ VENUE ══════ -->
+<section id="venue" style="max-width:900px;">
+  <div class="section-label">Destination</div>
+  <div class="section-title">Our Lady's Garden</div>
+  <div class="venue-card reveal">
+    <div class="venue-map-area">
+      <p style="font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-mid);margin-bottom:6px;">Scan to get directions</p>
+      <div class="qr-container">
+        <canvas id="qr-code" width="150" height="150" style="image-rendering:pixelated;border-radius:4px;"></canvas>
+        <div class="qr-label" style="text-align:center;">📍 Our Lady's Garden · Bacolod City</div>
+        <div class="qr-sub">Tap or scan for Google Maps</div>
+      </div>
+      <a href="https://maps.app.goo.gl/aA7j1JyWDCHT8mDu8" target="_blank"
+         style="font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.25em;text-transform:uppercase;color:var(--sage);text-decoration:none;border-bottom:1px solid var(--sage);padding-bottom:2px;">
+         Open in Google Maps ↗
+      </a>
+    </div>
+    <div class="venue-info-area">
+      <div class="venue-name-block">
+        <div class="venue-label">Ceremony & Reception</div>
+        <div class="venue-name">Our Lady's Garden</div>
+        <div class="venue-address">Lacson-Mandalagan Ext.<br>Bacolod City, Philippines</div>
+      </div>
+      <div style="text-align:left;">
+        <div style="font-family:'Special Elite',cursive;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--tan);margin-bottom:5px;">Ceremony Starts</div>
+        <div style="font-family:'Playfair Display',serif;font-size:28px;color:var(--text-dark);">4:00 PM</div>
+        <div style="font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-mid);margin-top:4px;">Please arrive by 3:30 PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <!-- ══════ NOTES ══════ -->
 <section id="notes" style="max-width:780px;">
