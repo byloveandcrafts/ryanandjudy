@@ -8,6 +8,7 @@
     
     <meta property="og:title" content="Ryan & Judy | You're Invited!">
     <meta property="og:description" content="Join us as we celebrate our love and tie the knot. Click here for details, our gallery, and to RSVP.">
+    <meta property="og:image" content="https://byloveandcrafts.github.io/ryanandjudy/1.jpg">
     <meta property="og:url" content="https://byloveandcrafts.github.io/ryanandjudy/">
     <meta property="og:type" content="website">
 
@@ -702,8 +703,8 @@
   }
   .dc-swatches-row {
     display: flex;
-    gap: 8px;
-    align-items: center;
+    gap: 10px;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
   .dc-swatches-center {
@@ -746,6 +747,34 @@
     border-top: 1px dashed #d4c4b0;
     margin: 16px 0;
   }
+  /* Grouped attire layout: Principal Sponsors | Secondary Sponsors */
+  .dc-attire-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .dc-attire-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .dc-attire-group-label {
+    font-family: 'Special Elite', cursive;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #d4c4b0;
+  }
+  @media (max-width: 600px) {
+    .dc-attire-group-row {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
   .dc-attire-block { }
   .dc-attire-who {
     font-family: 'Special Elite', cursive;
@@ -1172,46 +1201,39 @@
       <p class="dc-intro">We would love to see you in your formal attire.</p>
       <div class="dc-dashed-border">
 
-        <!-- Principal Sponsors row -->
-        <div class="dc-block-row">
-          <div class="dc-block-half">
-            <div class="dc-block-title">Principal Sponsors<br><span class="dc-block-sub">Color Guide</span></div>
-            <div class="dc-swatches-row">
-              <div class="dc-swatch" style="background:#A8B8A2;" title="Sage Green"></div>
-              <div class="dc-swatch" style="background:#1a1a1a;" title="Black"></div>
+        <!-- Attire rules with inline color palettes -->
+        <div class="dc-attire-group-row">
+          <!-- Principal Sponsors group -->
+          <div class="dc-attire-group">
+            <div class="dc-attire-group-label">Principal Sponsors<span class="dc-block-sub"> · Color Guide</span></div>
+            <div class="dc-swatches-row" style="margin-bottom:12px;">
+              <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#A8B8A2;"></div><div class="dc-swatch-lbl">Sage Green</div></div>
+              <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#1a1a1a;"></div><div class="dc-swatch-lbl">Black</div></div>
+            </div>
+            <div class="dc-attire-block">
+              <div class="dc-attire-who">NINANG:</div>
+              <div class="dc-attire-what">Long Dress or Gown in Sage Green</div>
+            </div>
+            <div class="dc-attire-block" style="margin-top:10px;">
+              <div class="dc-attire-who">NINONG:</div>
+              <div class="dc-attire-what">Barong Tagalog with Black/Brown Slacks, Black or Brown Leather Shoes</div>
             </div>
           </div>
-          <div class="dc-block-half">
-            <div class="dc-block-title">Secondary Sponsors<br><span class="dc-block-sub">Color Guide</span></div>
-            <div class="dc-swatches-row">
-              <div class="dc-swatch" style="background:#C8A882;" title="Beige"></div>
-              <div class="dc-swatch" style="background:#E8D5B8;" title="Light Champagne"></div>
+          <!-- Secondary Sponsors group -->
+          <div class="dc-attire-group">
+            <div class="dc-attire-group-label">Secondary Sponsors<span class="dc-block-sub"> · Color Guide</span></div>
+            <div class="dc-swatches-row" style="margin-bottom:12px;">
+              <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#C8A882;"></div><div class="dc-swatch-lbl">Beige</div></div>
+              <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#E8D5B8;"></div><div class="dc-swatch-lbl">Champagne</div></div>
             </div>
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div class="dc-inner-divider"></div>
-
-        <!-- Attire rules -->
-        <div class="dc-block-row" style="gap:24px;align-items:flex-start;">
-          <div class="dc-attire-block">
-            <div class="dc-attire-who">NINANG:</div>
-            <div class="dc-attire-what">Long Dress or Gown in Sage Green</div>
-          </div>
-          <div class="dc-attire-block">
-            <div class="dc-attire-who">LADIES:</div>
-            <div class="dc-attire-what">Long Dress or Gown in Beige</div>
-          </div>
-        </div>
-        <div class="dc-block-row" style="gap:24px;align-items:flex-start;margin-top:12px;">
-          <div class="dc-attire-block">
-            <div class="dc-attire-who">NINONG:</div>
-            <div class="dc-attire-what">Barong Tagalog with Black/Brown Slacks, Black or Brown Leather Shoes</div>
-          </div>
-          <div class="dc-attire-block">
-            <div class="dc-attire-who">GENTLEMEN:</div>
-            <div class="dc-attire-what">Barong Tagalog with Black Slacks, Black or Brown Leather Shoes</div>
+            <div class="dc-attire-block">
+              <div class="dc-attire-who">LADIES:</div>
+              <div class="dc-attire-what">Long Dress or Gown in Beige</div>
+            </div>
+            <div class="dc-attire-block" style="margin-top:10px;">
+              <div class="dc-attire-who">GENTLEMEN:</div>
+              <div class="dc-attire-what">Barong Tagalog with Black Slacks, Black or Brown Leather Shoes</div>
+            </div>
           </div>
         </div>
 
