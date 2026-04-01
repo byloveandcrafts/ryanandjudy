@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ryan + Judy | May 22, 2026</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan & Judy - Our Lifetime Starts Here</title>
+    
+    <meta property="og:title" content="Ryan & Judy | You're Invited!">
+    <meta property="og:description" content="Join us as we celebrate our love and tie the knot. Click here for details, our gallery, and to RSVP.">
+    <meta property="og:image" content="https://byloveandcrafts.github.io/ryanandjudy/1.jpg">
+    <meta property="og:url" content="https://byloveandcrafts.github.io/ryanandjudy/">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Special+Elite&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -38,7 +47,28 @@
   .hero-date-band{display:inline-flex;align-items:center;gap:16px;margin:22px 0;padding:12px 30px;border-top:1.5px solid var(--champagne);border-bottom:1.5px solid var(--champagne);}
   .hero-date-band span{font-family:'Josefin Sans',sans-serif;font-size:clamp(12px,1.8vw,15px);letter-spacing:0.3em;text-transform:uppercase;color:var(--text-mid);font-weight:300;}
   .hero-date-band .dot{color:var(--blush);font-size:20px;}
-  .hero-surnames{font-family:'Josefin Sans',sans-serif;font-size:clamp(12px,1.8vw,15px);letter-spacing:0.4em;text-transform:uppercase;color:var(--text-mid);font-weight:200;margin-bottom:30px;}
+  .hero-surnames{font-family:'Josefin Sans',sans-serif;font-size:clamp(12px,1.8vw,15px);letter-spacing:0.4em;text-transform:uppercase;color:var(--text-mid);font-weight:200;margin-bottom:14px;}
+  .hero-bible-verse {
+    margin: 16px auto 4px;
+    max-width: 420px;
+    padding: 8px 20px;
+  }
+  .hbv-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(14px, 2vw, 17px);
+    font-style: italic;
+    color: var(--text-mid);
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+  }
+  .hbv-ref {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: clamp(10px, 1.4vw, 12px);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-top: 5px;
+  }
   .scroll-cta{margin-top:20px;animation:bounce-down 2s ease-in-out infinite;color:var(--tan);font-size:24px;}
   @keyframes bounce-down{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
   .stamp-badge{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:100px;height:100px;border:2.5px solid var(--sage);border-radius:4px;padding:8px;position:relative;text-align:center;margin:0 auto;}
@@ -205,14 +235,22 @@
   .dress-card .dc-who{font-family:'Special Elite',cursive;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--sage);margin-bottom:5px;}
   .dress-card .dc-attire{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:var(--text-dark);line-height:1.4;}
   .dress-card .dc-sub{font-family:'Josefin Sans',sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-mid);margin-top:4px;}
-  .color-swatches { display: flex; gap: 10px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+  .color-swatches { 
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+    align-items: center;
+    margin: 16px auto 0; 
+    flex-wrap: wrap; 
+    width: 100%; 
+  }
   
   .swatch-item { 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    gap: 6px; 
-    width: 75px; /* Ensures every circle column is the exact same size */
+    gap: 8px; 
+    width: 75px; 
   }
   
   .swatch { width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid rgba(139,110,82,0.2); box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
@@ -395,23 +433,20 @@
   position: relative;
   width: 300px;
   height: 200px;
-  background: #fff;
-  border: 8px solid transparent;
-  /* Airmail Stripe Border */
-  border-image: repeating-linear-gradient(45deg, #e8b7b1 0, #e8b7b1 15px, transparent 15px, transparent 30px, #a8b8a2 30px, #a8b8a2 45px, transparent 45px, transparent 60px) 10;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: #fdfaf5;
+  border: 1.5px solid #e0d4c0;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(139,110,82,0.16);
   cursor: pointer;
   transition: 0.5s;
 }
 
 .flap {
   position: absolute;
-  top: -8px; left: -8px;
+  top: 0; left: 0;
   width: 100%; height: 100%;
-  background: #fdfcf9;
-  border: 8px solid transparent;
-  border-image: inherit;
-  clip-path: polygon(0 0, 50% 50%, 100% 0);
+  background: #f5ede0;
+  clip-path: polygon(0 0, 50% 52%, 100% 0);
   z-index: 3;
   transition: 0.5s;
   transform-origin: top;
@@ -420,7 +455,7 @@
 .body-env {
   position: absolute;
   width: 100%; height: 100%;
-  background: #ffffff;
+  background: #fdfaf5;
   z-index: 2;
 }
 
@@ -456,10 +491,10 @@
   color: var(--text-dark);
 }
 
-/* Cebu Pacific Stamp */
+/* Stamp — lower left */
 .stamp {
   position: absolute;
-  top: 14px; right: 14px;
+  bottom: 12px; left: 14px;
   width: 70px; height: 82px;
   z-index: 6;
   cursor: default;
@@ -467,7 +502,7 @@
 .stamp svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.15));
 }
 
 /* Animation Classes */
@@ -521,15 +556,211 @@
   pointer-events: none; /* envelope click handles this */
 }
 
-/* Ensure envelope perspective for flap flip */
+/* Ensure flap perspective */
 .envelope {
   perspective: 600px;
 }
-  
 
 
+  /* ── NEW DRESS CODE TAG LAYOUT ── */
+  .dc-tag-outer {
+    position: relative;
+    max-width: 680px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .dc-tag-header {
+    background: #e8c4b8;
+    padding: 22px 24px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .dc-tag-circle {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: #f5ede4;
+    border: 2px solid rgba(255,255,255,0.6);
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .dc-header-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dc-stamp-badge {
+    background: rgba(255,255,255,0.25);
+    border: 1.5px dashed rgba(255,255,255,0.55);
+    border-radius: 6px;
+    padding: 10px 16px;
+  }
+  .dc-stamp-inner { text-align: center; }
+  .dc-stamp-label {
+    font-family: 'Special Elite', cursive;
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+  }
+  .dc-stamp-icon { font-size: 18px; margin: 4px 0; }
+  .dc-stamp-date {
+    font-family: 'Special Elite', cursive;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: white;
+    font-weight: bold;
+  }
+  .dc-plane-silhouette {
+    width: 100px;
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+  .dc-plane-silhouette svg { width: 100%; height: auto; }
 
-  /* FAQ */
+  .dc-tag-body {
+    background: white;
+    padding: 28px 32px 36px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(139,110,82,0.1);
+  }
+  .dc-intro {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .dc-dashed-border {
+    border: 1.5px dashed #d4c4b0;
+    border-radius: 6px;
+    padding: 24px 22px;
+    position: relative;
+  }
+  .dc-block-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .dc-block-half { }
+  .dc-block-title {
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .dc-block-sub {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: var(--text-mid);
+  }
+  .dc-swatches-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .dc-swatches-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 14px 0;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .dc-swatch {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(139,110,82,0.18);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+  }
+  .dc-swatch-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 0 0 auto;
+    width: 60px;
+  }
+  .dc-swatch-lbl {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    text-align: center;
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .dc-inner-divider {
+    border: none;
+    border-top: 1px dashed #d4c4b0;
+    margin: 16px 0;
+  }
+  .dc-attire-block { }
+  .dc-attire-who {
+    font-family: 'Special Elite', cursive;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+  }
+  .dc-attire-what {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(14px, 1.8vw, 16px);
+    color: var(--text-mid);
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .dc-guests-block {
+    text-align: center;
+  }
+  .dc-guest-rules {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    line-height: 2;
+    margin-bottom: 8px;
+  }
+  .dc-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--text-mid);
+    letter-spacing: 0.05em;
+  }
+  /* Rose corner decorations (CSS radial blurs) */
+  .dc-roses {
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+    height: 130px;
+    pointer-events: none;
+    opacity: 0.12;
+    background: radial-gradient(circle, #e8b7b1 30%, transparent 70%);
+  }
+  .dc-roses-left { left: -30px; }
+  .dc-roses-right { right: -30px; }
+
+  @media(max-width:560px){
+    .dc-block-row { grid-template-columns: 1fr; }
+    .dc-tag-body { padding: 20px 16px 28px; }
+    .dc-plane-silhouette { width: 70px; }
+  }
+
+
   .faq-list { display: flex; flex-direction: column; gap: 12px; }
   .faq-item { background: white; border-radius: 10px; box-shadow: 0 3px 14px rgba(139,110,82,0.08); overflow: hidden; border-left: 3px solid var(--champagne); transition: border-color 0.3s; }
   .faq-item.open { border-left-color: var(--sage); }
@@ -554,24 +785,15 @@
         <p class="letter-tagline">Our Journey Begins</p>
       </div>
     </div>
+    <!-- Stamp — lower left -->
     <div class="stamp">
       <svg viewBox="0 0 62 74" xmlns="http://www.w3.org/2000/svg" font-family="'Cormorant Garamond', Georgia, serif">
-        <!-- Perforated outer border -->
-        <rect x="2" y="2" width="58" height="70" rx="2" ry="2"
-              fill="#fdf8f0" stroke="#c4a882" stroke-width="1.2"
-              stroke-dasharray="3.5 2"/>
-        <!-- Inner fine border -->
-        <rect x="6" y="6" width="50" height="62" rx="1" ry="1"
-              fill="none" stroke="#c4a882" stroke-width="0.6" opacity="0.7"/>
-        <!-- Floral top ornament -->
+        <rect x="2" y="2" width="58" height="70" rx="2" ry="2" fill="#fdf8f0" stroke="#c4a882" stroke-width="1.2" stroke-dasharray="3.5 2"/>
+        <rect x="6" y="6" width="50" height="62" rx="1" ry="1" fill="none" stroke="#c4a882" stroke-width="0.6" opacity="0.7"/>
         <text x="31" y="20" text-anchor="middle" font-size="13" fill="#a8836a" opacity="0.85">✿</text>
-        <!-- Names -->
         <text x="31" y="34" text-anchor="middle" font-size="8.5" fill="#5c3d2a" font-style="italic" letter-spacing="0.5">Ryan &amp; Judy</text>
-        <!-- Thin rule -->
         <line x1="12" y1="38" x2="50" y2="38" stroke="#c4a882" stroke-width="0.6"/>
-        <!-- Date -->
         <text x="31" y="48" text-anchor="middle" font-size="6.5" fill="#8b6e52" letter-spacing="1">05 · 22 · 26</text>
-        <!-- Bottom ornament row -->
         <text x="17" y="61" text-anchor="middle" font-size="7" fill="#a8b8a2">✦</text>
         <text x="31" y="61" text-anchor="middle" font-size="7" fill="#e8b7b1">♥</text>
         <text x="45" y="61" text-anchor="middle" font-size="7" fill="#a8b8a2">✦</text>
@@ -614,6 +836,11 @@
         <div class="stamp-date">05.22.26</div>
         <div class="stamp-text">Bacolod City</div>
       </div>
+    </div>
+    <!-- Bible verse below stamp -->
+    <div class="hero-bible-verse">
+      <div class="hbv-text">"I have found the one whom my soul loves."</div>
+      <div class="hbv-ref">— Song of Solomon 3:4</div>
     </div>
     <div class="scroll-cta">↓</div>
   </div>
@@ -887,33 +1114,87 @@
 </section>
 
 <!-- ══════ DRESS CODE ══════ -->
-<section id="dresscode">
-  <div class="section-label">Attire Guide</div>
-  <div class="section-title">Dress Code</div>
-  <div class="dress-box reveal">
-    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.2vw,19px);font-style:italic;color:var(--text-mid);text-align:center;margin-bottom:22px;line-height:1.7;">
-      We would love to see you in your formal attire.<br>Please dress as elegantly as you feel!
-    </p>
-    <div class="dress-attire-grid">
-      <div class="dress-card"><div class="dc-icon">👗</div><div class="dc-who">Ninang</div><div class="dc-attire">Long Dress</div><div class="dc-sub">or Gown in Sage</div></div>
-      <div class="dress-card"><div class="dc-icon">👗</div><div class="dc-who">Ladies</div><div class="dc-attire">Long Dress</div><div class="dc-sub">or Gown in Champagne</div></div>
-      <div class="dress-card"><div class="dc-icon">🤵</div><div class="dc-who">Ninong</div><div class="dc-attire">Barong Tagalog</div><div class="dc-sub">with Black Slacks</div></div>
-      <div class="dress-card"><div class="dc-icon">🤵</div><div class="dc-who">Gentlemen</div><div class="dc-attire">Barong Tagalog</div><div class="dc-sub">with Black Slacks</div></div>
-      <div class="dress-card" style="grid-column:1/-1;max-width:240px;margin:0 auto;"><div class="dc-icon">👨‍👩‍👧</div><div class="dc-who">Guests</div><div class="dc-attire">Color Guide</div><div class="dc-sub">Beige · Champagne · Sage</div></div>
-    </div>
-    <div style="text-align:center;margin-top:20px;">
-      <p style="font-family:'Special Elite',cursive;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--tan);margin-bottom:12px;">Color Palette</p>
-      <div class="color-swatches">
-        <div class="swatch-item"><div class="swatch" style="background:#F6F1E8;"></div><div class="swatch-name">Ivory</div></div>
-        <div class="swatch-item"><div class="swatch" style="background:#E8B7B1;"></div><div class="swatch-name">Blush</div></div>
-        <div class="swatch-item"><div class="swatch" style="background:#A8B8A2;"></div><div class="swatch-name">Sage</div></div>
-        <div class="swatch-item"><div class="swatch" style="background:#DBC3A5;"></div><div class="swatch-name">Champagne</div></div>
-        <div class="swatch-item"><div class="swatch" style="background:#F1E3C6;"></div><div class="swatch-name">Warm White</div></div>
-      </div>
-    </div>
-    <p style="font-family:'Josefin Sans',sans-serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-mid);text-align:center;margin-top:16px;opacity:0.7;">
-      Please avoid wearing white — reserved for our bride 🤍
-    </p>
+<section id="dresscode" style="max-width:900px;padding-left:0;padding-right:0;">
+  <div style="padding:0 clamp(20px,5vw,60px) 0;">
+    <div class="section-label">Attire Guide</div>
+    <div class="section-title">Dress Code</div>
+  </div>
+
+  <div class="dc-tag-outer reveal">
+    <!-- Main dress code body — plain, no blush header -->
+    <div class="dc-tag-body">
+      <p class="dc-intro">We would love to see you in your formal attire.</p>
+      <div class="dc-dashed-border">
+
+        <!-- Principal Sponsors row -->
+        <div class="dc-block-row">
+          <div class="dc-block-half">
+            <div class="dc-block-title">Principal Sponsors<br><span class="dc-block-sub">Color Guide</span></div>
+            <div class="dc-swatches-row">
+              <div class="dc-swatch" style="background:#A8B8A2;" title="Sage Green"></div>
+              <div class="dc-swatch" style="background:#1a1a1a;" title="Black"></div>
+            </div>
+          </div>
+          <div class="dc-block-half">
+            <div class="dc-block-title">Secondary Sponsors<br><span class="dc-block-sub">Color Guide</span></div>
+            <div class="dc-swatches-row">
+              <div class="dc-swatch" style="background:#C8A882;" title="Beige"></div>
+              <div class="dc-swatch" style="background:#E8D5B8;" title="Light Champagne"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="dc-inner-divider"></div>
+
+        <!-- Attire rules -->
+        <div class="dc-block-row" style="gap:24px;align-items:flex-start;">
+          <div class="dc-attire-block">
+            <div class="dc-attire-who">NINANG:</div>
+            <div class="dc-attire-what">Long Dress or Gown in Sage Green</div>
+          </div>
+          <div class="dc-attire-block">
+            <div class="dc-attire-who">LADIES:</div>
+            <div class="dc-attire-what">Long Dress or Gown in Beige</div>
+          </div>
+        </div>
+        <div class="dc-block-row" style="gap:24px;align-items:flex-start;margin-top:12px;">
+          <div class="dc-attire-block">
+            <div class="dc-attire-who">NINONG:</div>
+            <div class="dc-attire-what">Barong Tagalog with Black/Brown Slacks, Black or Brown Leather Shoes</div>
+          </div>
+          <div class="dc-attire-block">
+            <div class="dc-attire-who">GENTLEMEN:</div>
+            <div class="dc-attire-what">Barong Tagalog with Black Slacks, Black or Brown Leather Shoes</div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="dc-inner-divider"></div>
+
+        <!-- Guests color guide -->
+        <div class="dc-guests-block">
+          <div class="dc-block-title" style="text-align:center;">GUESTS<br><span class="dc-block-sub">Color Guide</span></div>
+          <div class="dc-swatches-center">
+            <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#E8B7B1;"></div><div class="dc-swatch-lbl">Blush</div></div>
+            <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#C8A882;"></div><div class="dc-swatch-lbl">Beige</div></div>
+            <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#A8B8A2;"></div><div class="dc-swatch-lbl">Sage Green</div></div>
+            <div class="dc-swatch-wrap"><div class="dc-swatch" style="background:#E8D5B8;"></div><div class="dc-swatch-lbl">Champagne</div></div>
+          </div>
+          <div class="dc-guest-rules">
+            <div>Longsleeves or Polo for the Gents</div>
+            <div>Long or Maxi Dress for the Ladies</div>
+          </div>
+          <div class="dc-note">Please don't wear sports shoes and maong pants.</div>
+          <div class="dc-note" style="margin-top:4px;color:var(--blush);">Please avoid wearing white — reserved for our bride 🤍</div>
+        </div>
+
+      </div><!-- end dashed border -->
+    </div><!-- end tag body -->
+
+    <!-- Rose decorations (CSS only) -->
+    <div class="dc-roses dc-roses-left"></div>
+    <div class="dc-roses dc-roses-right"></div>
   </div>
 </section>
 
@@ -940,11 +1221,11 @@
 <div id="hashtag">
   <div class="ht-inner">
     <div class="ht-camera">📸</div>
-    <div class="ht-label">Share Your Photos & Moments</div>
+    <div class="ht-label">Cherished the Moments</div>
     <div class="ht-tag">#JudyGotTheRyTOne</div>
     <div class="ht-sub">
-      Tag us on your photos and help us relive<br>every beautiful moment of our special day.<br>
-      <em style="font-size:0.88em;opacity:0.82;">We'd love to see the celebration through your eyes!</em>
+      Help us keep this moment special and kindly allow us to share our first post,<br>
+      <em style="font-size:0.88em;opacity:0.82;">before uploading any photos or videos.</em>
     </div>
   </div>
 </div>
@@ -1014,12 +1295,12 @@
     <div class="rsvp-sub">Kindly respond on or before May 3, 2026</div>
     <div class="rsvp-deadline">We have reserved 1 seat for you</div>
     <div class="rsvp-contact">
-      <div class="rc-label">📞 Contact the Groom</div>
-      <div class="rc-name">Ryan Muñez</div>
-      <div class="rc-phone"><a href="tel:09484837137">0948 483 7137</a></div>
-      <div class="rc-label">📞 Contact the Bride</div>
-      <div class="rc-name">Judy Ardeña</div>
-      <div class="rc-phone"><a href="tel:09104880634">0910 488 0634</a></div>
+      <div class="rc-label">📞 Contact the Groom - Facebook</div>
+      <div class="rc-name">Ryan Christopher Muñez</div>
+      
+      <div class="rc-label">📞 Contact the Bride - Facebook</div>
+      <div class="rc-name">Judy Ann Parreñas Ardeña</div>
+      
     </div>
   </div>
 </section>
